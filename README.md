@@ -42,7 +42,7 @@ Non-adherence to medication is one of the most costly and preventable health pro
 ![Landing Page](MMT_VSCODE/screenshots/landing_page.png)
 > Animated gradient background with orb effects — entry point for the app
 
-###  Add Medication Form
+### Add Medication Form
 ![Medication form](MMT_VSCODE/screenshots/form.png)
 > Modal form — captures patient name, email, medicine, dosage, time, and frequency
 
@@ -52,7 +52,8 @@ Non-adherence to medication is one of the most costly and preventable health pro
 
 ### Email Reminder
 ![Email Reminder](MMT_VSCODE/screenshots/mail_2.png)
-![Email Reminder_1](MMT_VSCODE/screenshots/mail.png)
+
+![Email Reminder 1](MMT_VSCODE/screenshots/mail.png)
 > Styled HTML email sent at the scheduled time with medicine name and dosage details
 
 ---
