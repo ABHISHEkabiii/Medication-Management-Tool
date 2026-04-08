@@ -6,7 +6,7 @@
 
 > Smart medication reminder system — reduces the 80M+ non-adherent patients in India by sending automated email reminders via Gmail SMTP at scheduled times.
 
-**Research Paper**: VIT Vellore — Abhishek, Sandhiya, Pallavi Mishra
+**Research Paper**: VIT Vellore — Abhishek
 
 ---
 
