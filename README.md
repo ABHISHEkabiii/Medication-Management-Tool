@@ -8,7 +8,7 @@
 
 > A full-stack medication reminder web app that tackles the **80M+ non-adherent patients** problem in India — scheduling automated email reminders via Gmail SMTP and tracking adherence in real time through a dark-theme dashboard.
 
-**Research Paper**: VIT Vellore — Abhishek
+**Research Paper**: VIT Vellore — Abhishek G
 
 ---
 
@@ -39,11 +39,11 @@ Non-adherence to medication is one of the most costly and preventable health pro
 ## 🖼 Demo
 
 ### Hero Landing Page
-![Landing Page](MMT_VSCODE/screenshots/landing_page.png)
+!(MMT_VSCODE/screenshots/landing_page.png)
 > Animated gradient background with orb effects — entry point for the app
 
 ### Add Medication Form
-![Medication form](MMT_VSCODE/screenshots/form.png)
+(MMT_VSCODE/screenshots/form.png)
 > Modal form — captures patient name, email, medicine, dosage, time, and frequency
 
 ### Tracker Dashboard
