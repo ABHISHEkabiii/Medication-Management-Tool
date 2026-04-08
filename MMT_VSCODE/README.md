@@ -8,7 +8,7 @@
 
 > A full-stack medication reminder web app that tackles the **80M+ non-adherent patients** problem in India — scheduling automated email reminders via Gmail SMTP and tracking adherence in real time through a dark-theme dashboard.
 
-**Research Paper**: VIT Vellore — Abhishek, Sandhiya, Pallavi Mishra
+**Research Paper**: VIT Vellore — Abhishek
 
 ---
 
