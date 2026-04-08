@@ -39,9 +39,9 @@ Non-adherence to medication is one of the most costly and preventable health pro
 ## 🖼 Demo
 
 ### Hero Landing Page
-
-> Animated gradient background with orb effects — entry point for the app
 ![Landing Page](MMT_VSCODE/screenshots/landing_page.png)
+> Animated gradient background with orb effects — entry point for the app
+---
 ### Add Medication Form
 ![Medication form](MMT_VSCODE/screenshots/form.png)
 > Modal form — captures patient name, email, medicine, dosage, time, and frequency
