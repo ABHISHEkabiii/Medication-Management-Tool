@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medication Management Tool — MMT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span>MMT</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#add">Add Med</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+    </ul>
+    <a href="#add" class="nav-cta">Add Reminder</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Healthcare · Medication · Management</div>
+    <h1 class="hero-title">
+      Never Miss<br>
+      Your <em class="highlight">Medications</em><br>
+      Again
+    </h1>
+    <p class="hero-sub">
+      Every year, 7,000 people in India die from medication errors.<br>
+      80 million+ don't take their meds properly. Let's fix that together.
+    </p>
+    <div class="hero-numbers">
+      <div class="hn"><span class="hn-val">1.1B</span><span class="hn-lbl">Patients/yr India</span></div>
+      <div class="hn-sep"></div>
+      <div class="hn"><span class="hn-val">80M+</span><span class="hn-lbl">Non-adherent</span></div>
+      <div class="hn-sep"></div>
+      <div class="hn"><span class="hn-val">49%</span><span class="hn-lbl">Miss weekly doses</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#add" class="btn-main">Set a Reminder</a>
+      <a href="#about" class="btn-ghost">Learn more</a>
+    </div>
+  </div>
+  <div class="hero-card-float">
+    <div class="float-card">
+      <div class="float-icon">💊</div>
+      <div class="float-info">
+        <span class="float-name">Metformin 500mg</span>
+        <span class="float-time">Reminder: 08:00 AM</span>
+      </div>
+      <div class="float-badge">Active</div>
+    </div>
+    <div class="float-card">
+      <div class="float-icon">🩺</div>
+      <div class="float-info">
+        <span class="float-name">Amlodipine 5mg</span>
+        <span class="float-time">Reminder: 09:00 PM</span>
+      </div>
+      <div class="float-badge taken">Taken ✓</div>
+    </div>
+    <div class="float-stat-row">
+      <div class="fs"><span>Adherence</span><strong>87%</strong></div>
+      <div class="fs"><span>This week</span><strong>6/7 days</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="section-inner">
+    <div class="section-eyebrow">About the Project</div>
+    <h2>Why We Built This</h2>
+    <p class="section-desc">
+      Created during our time at VIT Vellore, this tool combines Flask, MongoDB,
+      and Gmail to send smart medication reminders. It's all about saving lives
+      by making sure chronic patients don't forget their meds.
+    </p>
+    <div class="features">
+      <div class="feat">
+        <div class="feat-num">01</div>
+        <div class="feat-body">
+          <h3>Medication Scheduling</h3>
+          <p>Set name, dosage, time and frequency — stored persistently in MongoDB.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">02</div>
+        <div class="feat-body">
+          <h3>Email Reminders</h3>
+          <p>APScheduler checks every minute and fires Gmail SMTP reminders at scheduled time.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">03</div>
+        <div class="feat-body">
+          <h3>Adherence Dashboard</h3>
+          <p>Live stats: total, taken, missed, and adherence percentage updated in real-time.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">04</div>
+        <div class="feat-body">
+          <h3>Confirmation Emails</h3>
+          <p>Instantly sends a styled confirmation when you add a new medication reminder.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section id="arch" class="arch-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">System Design</div>
+    <h2>Architecture</h2>
+    <div class="arch-flow">
+      <div class="arch-block">
+        <div class="arch-icon">🌐</div>
+        <div class="arch-name">HTML / CSS / JS</div>
+        <div class="arch-role">Frontend UI</div>
+      </div>
+      <div class="arch-connector"><span>REST API</span></div>
+      <div class="arch-block highlight-block">
+        <div class="arch-icon">🐍</div>
+        <div class="arch-name">Flask + Python</div>
+        <div class="arch-role">Backend + Scheduler</div>
+      </div>
+      <div class="arch-connector"><span>PyMongo</span></div>
+      <div class="arch-block">
+        <div class="arch-icon">🍃</div>
+        <div class="arch-name">MongoDB</div>
+        <div class="arch-role">Database</div>
+      </div>
+      <div class="arch-connector"><span>SMTP</span></div>
+      <div class="arch-block">
+        <div class="arch-icon">📬</div>
+        <div class="arch-name">Gmail SMTP</div>
+        <div class="arch-role">Email Notifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD MEDICATION FORM -->
+<section id="add" class="form-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Add Medication</div>
+    <h2>Set Up Your Reminder</h2>
+
+    <form id="medForm" class="mmt-form" novalidate>
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input type="text" id="name" placeholder="e.g. Abhishek" autocomplete="name" required>
+          <span class="field-err" id="err-name"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" placeholder="you@email.com" autocomplete="email" required>
+          <span class="field-err" id="err-email"></span>
+        </div>
+
+        <div class="field">
+          <label for="medicine">Medicine Name <span class="req">*</span></label>
+          <input type="text" id="medicine" placeholder="e.g. Metformin 500mg" required>
+          <span class="field-err" id="err-medicine"></span>
+        </div>
+
+        <div class="field">
+          <label for="dosage">Dosage <span class="req">*</span></label>
+          <input type="text" id="dosage" placeholder="e.g. 1 tablet" required>
+          <span class="field-err" id="err-dosage"></span>
+        </div>
+
+        <div class="field">
+          <label for="time">Reminder Time <span class="req">*</span></label>
+          <input type="time" id="time" required>
+          <span class="field-err" id="err-time"></span>
+        </div>
+
+        <div class="field">
+          <label for="frequency">Frequency <span class="req">*</span></label>
+          <select id="frequency" required>
+            <option value="">Select frequency</option>
+            <option value="Once daily">Once daily</option>
+            <option value="Twice daily">Twice daily</option>
+            <option value="Three times daily">Three times daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="As needed">As needed</option>
+          </select>
+          <span class="field-err" id="err-frequency"></span>
+        </div>
+
+      </div>
+
+      <button type="submit" id="submitBtn" class="btn-submit">
+        <span id="btnText">Set Reminder & Send Email</span>
+        <span id="btnSpinner" class="spinner hidden"></span>
+      </button>
+    </form>
+
+    <div id="formMessage" class="form-message hidden"></div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="dashboard">
+  <div class="section-inner">
+    <div class="section-eyebrow">Dashboard</div>
+    <div class="dash-header">
+      <h2>Your Medication Tracker</h2>
+      <button class="refresh-btn" onclick="refresh()">↻ Refresh</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-tile">
+        <span class="st-val" id="statTotal">—</span>
+        <span class="st-lbl">Total</span>
+      </div>
+      <div class="stat-tile green">
+        <span class="st-val" id="statTaken">—</span>
+        <span class="st-lbl">Taken</span>
+      </div>
+      <div class="stat-tile red">
+        <span class="st-val" id="statMissed">—</span>
+        <span class="st-lbl">Missed/Pending</span>
+      </div>
+      <div class="stat-tile blue">
+        <span class="st-val" id="statAdherence">—</span>
+        <span class="st-lbl">Adherence %</span>
+      </div>
+    </div>
+
+    <!-- Medications Table -->
+    <div class="table-scroll">
+      <table id="medTable">
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Medicine</th>
+            <th>Dosage</th>
+            <th>Time</th>
+            <th>Frequency</th>
+            <th>Status</th>
+            <th>Added</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="medBody">
+          <tr><td colspan="8" class="empty">No medications yet. Add one above ↑</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">MMT</div>
+    <p>Medication Management Tool · VIT Vellore · Abhishek</p>
+    <p class="footer-tech">Flask · MongoDB · Python · HTML · CSS · JS</p>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

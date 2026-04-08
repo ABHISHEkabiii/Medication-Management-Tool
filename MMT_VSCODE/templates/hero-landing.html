@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMT - Abstract Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      background: #0a0a0a;
+    }
+
+    /* ─── Hero Section ─────────────────────────────────── */
+    .hero-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* ─── Animated Gradient Background ─────────────────── */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(220, 50, 70, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 50, 100, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+      background-size: 200% 200%, 200% 200%, 200% 200%, 100% 100%;
+      background-position: 0% 0%, 100% 100%, 50% 50%, 0% 0%;
+      animation: gradientShift 15s ease-in-out infinite;
+      filter: blur(60px);
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 0%, 100% 100%, 50% 50%, 0% 0%;
+      }
+      25% {
+        background-position: 50% 50%, 50% 50%, 50% 50%, 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%, 0% 0%, 50% 50%, 0% 0%;
+      }
+      75% {
+        background-position: 50% 50%, 50% 50%, 50% 50%, 0% 0%;
+      }
+      100% {
+        background-position: 0% 0%, 100% 100%, 50% 50%, 0% 0%;
+      }
+    }
+
+    /* ─── Additional Glow Layers ─────────────────────── */
+    .glow-layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .glow-orb-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 107, 53, 0.3) 0%, transparent 70%);
+      border-radius: 50%;
+      top: -250px;
+      right: -250px;
+      filter: blur(80px);
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .glow-orb-2 {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(220, 50, 70, 0.25) 0%, transparent 70%);
+      border-radius: 50%;
+      bottom: -300px;
+      left: -300px;
+      filter: blur(100px);
+      animation: float-reverse 25s ease-in-out infinite;
+    }
+
+    .glow-orb-3 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 50, 100, 0.2) 0%, transparent 70%);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(90px);
+      animation: pulse-glow 18s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-30px, -40px); }
+      50% { transform: translate(-60px, 0); }
+      75% { transform: translate(-30px, 40px); }
+    }
+
+    @keyframes float-reverse {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(40px, 30px); }
+      50% { transform: translate(60px, 0); }
+      75% { transform: translate(40px, -30px); }
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+      50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+    }
+
+    /* ─── Glassmorphism Card ────────────────────────── */
+    .glass-card {
+      position: relative;
+      z-index: 10;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      padding: 80px 120px;
+      text-align: center;
+      box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      animation: cardEnter 1s ease-out;
+    }
+
+    @keyframes cardEnter {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .glass-card:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border: 2px solid rgba(255, 107, 53, 0.4);
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 
+        0 16px 48px 0 rgba(255, 107, 53, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 107, 53, 0.2);
+    }
+
+    .glass-card:active {
+      transform: translateY(-5px) scale(1.01);
+    }
+
+    /* ─── Text Styling ───────────────────────────────── */
+    .card-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card-text-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(48px, 8vw, 120px);
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 8px;
+      margin: 0;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+      animation: textGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes textGlow {
+      from { text-shadow: 0 0 20px rgba(255, 107, 53, 0.3); }
+      to { text-shadow: 0 0 40px rgba(255, 107, 53, 0.6), 0 0 60px rgba(220, 50, 70, 0.3); }
+    }
+
+    .card-text-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(36px, 6vw, 90px);
+      font-weight: 800;
+      color: rgba(255, 107, 53, 0.9);
+      letter-spacing: 8px;
+      margin-top: 12px;
+      line-height: 1;
+      text-transform: uppercase;
+      animation: textGlowSub 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes textGlowSub {
+      from { text-shadow: 0 0 20px rgba(255, 107, 53, 0.4); }
+      to { text-shadow: 0 0 40px rgba(255, 107, 53, 0.8), 0 0 60px rgba(255, 107, 53, 0.4); }
+    }
+
+    /* ─── Top-Right Button ────────────────────────── */
+    .floating-btn-top {
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      z-index: 100;
+      width: 56px;
+      height: 56px;
+      background: rgba(255, 107, 53, 0.15);
+      border: 2px solid rgba(255, 107, 53, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 24px;
+      backdrop-filter: blur(10px);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .floating-btn-top:hover {
+      background: rgba(255, 107, 53, 0.25);
+      border-color: rgba(255, 107, 53, 0.8);
+      transform: scale(1.15) !important;
+      box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+    }
+
+    /* ─── Bottom-Right Button ────────────────────── */
+    .floating-btn-bottom {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 100;
+      width: 56px;
+      height: 56px;
+      background: rgba(220, 50, 70, 0.15);
+      border: 2px solid rgba(220, 50, 70, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 24px;
+      backdrop-filter: blur(10px);
+      animation: float-reverse 6s ease-in-out infinite;
+    }
+
+    .floating-btn-bottom:hover {
+      background: rgba(220, 50, 70, 0.25);
+      border-color: rgba(220, 50, 70, 0.8);
+      transform: scale(1.15) !important;
+      box-shadow: 0 0 20px rgba(220, 50, 70, 0.5);
+    }
+
+    /* ─── Responsive Design ───────────────────────── */
+    @media (max-width: 768px) {
+      .glass-card {
+        padding: 60px 40px;
+      }
+
+      .card-text-main {
+        font-size: clamp(36px, 10vw, 70px);
+        letter-spacing: 4px;
+      }
+
+      .card-text-sub {
+        font-size: clamp(28px, 8vw, 55px);
+        letter-spacing: 4px;
+      }
+
+      .floating-btn-top,
+      .floating-btn-bottom {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .glass-card {
+        padding: 50px 30px;
+        border-radius: 20px;
+      }
+
+      .card-text-main {
+        font-size: clamp(28px, 12vw, 50px);
+        letter-spacing: 3px;
+      }
+
+      .card-text-sub {
+        font-size: clamp(22px, 10vw, 40px);
+        letter-spacing: 3px;
+      }
+
+      .floating-btn-top,
+      .floating-btn-bottom {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        top: 24px;
+        bottom: 24px;
+        right: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-container">
+    <!-- Background with animated gradients -->
+    <div class="background"></div>
+    
+    <!-- Glow layers -->
+    <div class="glow-layer">
+      <div class="glow-orb-1"></div>
+      <div class="glow-orb-2"></div>
+      <div class="glow-orb-3"></div>
+    </div>
+
+    <!-- Glassmorphism Card -->
+    <div class="glass-card" onclick="cardClicked()">
+      <div class="card-text">
+        <p class="card-text-main">Abstract</p>
+        <p class="card-text-sub">Background</p>
+      </div>
+    </div>
+
+    <!-- Floating buttons -->
+    <div class="floating-btn-top" onclick="shareClicked()" title="Share">
+      <span>🔗</span>
+    </div>
+
+    <div class="floating-btn-bottom" onclick="zoomClicked()" title="Zoom">
+      <span>🔍</span>
+    </div>
+  </div>
+
+  <script>
+    // Card click interaction
+    function cardClicked() {
+      const card = document.querySelector('.glass-card');
+      card.style.animation = 'none';
+      setTimeout(() => {
+        card.style.animation = '';
+      }, 10);
+      console.log('Card clicked - Ready to explore!');
+    }
+
+    // Share button click
+    function shareClicked() {
+      console.log('Share button clicked');
+      // Add your share functionality here
+      alert('Share functionality - Ready to implement!');
+    }
+
+    // Zoom button click
+    function zoomClicked() {
+      console.log('Zoom button clicked');
+      // Add your zoom functionality here
+      alert('Zoom functionality - Ready to implement!');
+    }
+
+    // Add smooth mouse tracking effect (optional enhancement)
+    document.addEventListener('mousemove', (e) => {
+      const glowOrb3 = document.querySelector('.glow-orb-3');
+      const x = (e.clientX / window.innerWidth) * 20;
+      const y = (e.clientY / window.innerHeight) * 20;
+      glowOrb3.style.animation = 'none';
+      setTimeout(() => {
+        glowOrb3.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+      }, 10);
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') cardClicked();
+      if (e.key === 's' || e.key === 'S') shareClicked();
+      if (e.key === 'z' || e.key === 'Z') zoomClicked();
+    });
+  </script>
+</body>
+</html>
