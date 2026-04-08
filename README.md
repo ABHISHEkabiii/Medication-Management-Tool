@@ -51,7 +51,7 @@ Non-adherence to medication is one of the most costly and preventable health pro
 > Dashboard — tracking patient details, medications, dosage, schedule, and adherence frequency.
 
 ### Email Reminder
-![Email Reminder](MMT_VSCODE/screenshots/mail_2.png)
+![Email Reminder](MMT_VSCODE/screenshots/mailmain.png)
 ![Email Reminder 1](MMT_VSCODE/screenshots/mail.png)
 > Styled HTML email sent at the scheduled time with medicine name and dosage details
 
