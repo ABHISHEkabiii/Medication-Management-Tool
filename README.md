@@ -1,4 +1,4 @@
-# 💊 Medication Management Tool (MMT)
+#  Medication Management Tool (MMT)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-black?logo=flask)](https://flask.palletsprojects.com)
@@ -236,4 +236,4 @@ User clicks "Mark Taken" on dashboard
 M.Sc. Computational Statistics & Data Analytics — VIT Vellore  
 School of Advanced Sciences
 
-Built with ❤️ using Flask · MongoDB · APScheduler · Gmail SMTP
+Built using Flask · MongoDB · APScheduler · Gmail SMTP
