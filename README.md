@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ✅ ANIMATED 3D PILL BANNER — self-hosted SVG -->
-<img src="MMT_VSCODE/screenshots/assets/banner_1.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
+<img src="MMT_VSCODE/screenshots/banner_1.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
 
 <br/>
 
@@ -299,7 +299,7 @@ School of Advanced Sciences
 
 <div align="center">
 
-<img src="MMT_VSCODE/screenshots/assets/footer_1.svg" width="100%" alt="MMT Footer"/>
+<img src="MMT_VSCODE/screenshots/footer_1.svg" width="100%" alt="MMT Footer"/>
 
 <p>
   <sub>Built to fight medication non-adherence · <strong>MMT</strong> · Automated care, one reminder at a time</sub>
