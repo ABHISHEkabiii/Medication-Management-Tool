@@ -1,0 +1,134 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" style="background:transparent">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="100%" style="stop-color:#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c9ff"/>
+      <stop offset="100%" style="stop-color:#0077b6"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c9ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00c9ff;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c9ff"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Pill capsule shape -->
+    <clipPath id="bannerClip">
+      <rect width="900" height="200" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- Background -->
+    <rect width="900" height="200" fill="url(#bgGrad)"/>
+
+    <!-- Grid lines -->
+    <g opacity="0.08" stroke="#00c9ff" stroke-width="0.5">
+      <line x1="0" y1="50" x2="900" y2="50"/>
+      <line x1="0" y1="100" x2="900" y2="100"/>
+      <line x1="0" y1="150" x2="900" y2="150"/>
+      <line x1="150" y1="0" x2="150" y2="200"/>
+      <line x1="300" y1="0" x2="300" y2="200"/>
+      <line x1="450" y1="0" x2="450" y2="200"/>
+      <line x1="600" y1="0" x2="600" y2="200"/>
+      <line x1="750" y1="0" x2="750" y2="200"/>
+    </g>
+
+    <!-- Glow line across middle -->
+    <rect x="0" y="97" width="900" height="6" fill="url(#glowGrad)" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Left 3D Pill -->
+    <g transform="translate(90, 100)">
+      <!-- Pill body -->
+      <ellipse cx="0" cy="0" rx="42" ry="20" fill="#003d5c" opacity="0.9"/>
+      <ellipse cx="0" cy="-3" rx="42" ry="20" fill="url(#pillGrad)" opacity="0.95"/>
+      <!-- Pill shine -->
+      <ellipse cx="-5" cy="-8" rx="18" ry="6" fill="white" opacity="0.18"/>
+      <!-- Pill center line -->
+      <line x1="-42" y1="-3" x2="42" y2="-3" stroke="#004d73" stroke-width="2"/>
+      <!-- Left cap (red) -->
+      <path d="M-42,-3 A20,20 0 0,1 -42,17 A20,20 0 0,1 -42,-23 Z" fill="#ff4d6d" opacity="0.9"/>
+      <ellipse cx="-42" cy="-3" rx="14" ry="20" fill="#ff4d6d"/>
+      <ellipse cx="-48" cy="-6" rx="5" ry="8" fill="white" opacity="0.15"/>
+
+      <animateTransform attributeName="transform" type="rotate" values="-8;8;-8" dur="4s" repeatCount="indefinite" additive="sum"/>
+    </g>
+
+    <!-- Right 3D Pill -->
+    <g transform="translate(810, 100)">
+      <ellipse cx="0" cy="0" rx="42" ry="20" fill="#003d5c" opacity="0.9"/>
+      <ellipse cx="0" cy="-3" rx="42" ry="20" fill="url(#pillGrad)" opacity="0.95"/>
+      <ellipse cx="-5" cy="-8" rx="18" ry="6" fill="white" opacity="0.18"/>
+      <line x1="-42" y1="-3" x2="42" y2="-3" stroke="#004d73" stroke-width="2"/>
+      <ellipse cx="42" cy="-3" rx="14" ry="20" fill="#ff4d6d"/>
+      <ellipse cx="48" cy="-6" rx="5" ry="8" fill="white" opacity="0.15"/>
+
+      <animateTransform attributeName="transform" type="rotate" values="8;-8;8" dur="4s" repeatCount="indefinite" additive="sum"/>
+    </g>
+
+    <!-- Floating small pills -->
+    <g opacity="0.5">
+      <ellipse cx="200" cy="30" rx="18" ry="8" fill="#00c9ff">
+        <animate attributeName="cy" values="30;20;30" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="700" cy="170" rx="18" ry="8" fill="#ff6b6b">
+        <animate attributeName="cy" values="170;160;170" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="650" cy="25" rx="12" ry="5" fill="#00c9ff" opacity="0.4">
+        <animate attributeName="cy" values="25;35;25" dur="2.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="250" cy="175" rx="12" ry="5" fill="#ff4d6d" opacity="0.4">
+        <animate attributeName="cy" values="175;165;175" dur="2.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Pulse rings (heartbeat) -->
+    <g transform="translate(450,100)" filter="url(#softGlow)">
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#ff4d6d" stroke-width="2" opacity="0.9">
+        <animate attributeName="r" values="10;60;10" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#00c9ff" stroke-width="1.5" opacity="0.7">
+        <animate attributeName="r" values="10;60;10" dur="3s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Main Title -->
+    <text x="450" y="88" text-anchor="middle" font-family="'Courier New', monospace" font-size="44" font-weight="900" letter-spacing="8" fill="url(#textGrad)" filter="url(#glow)">
+      MMT
+    </text>
+    <text x="450" y="118" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" font-weight="400" letter-spacing="5" fill="#7ecfea" opacity="0.9">
+      MEDICATION MANAGEMENT TOOL
+    </text>
+    <text x="450" y="145" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" letter-spacing="3" fill="#ff6b6b" opacity="0.7">
+      FLASK · MONGODB · APSCHEDULER · GMAIL SMTP
+    </text>
+
+    <!-- Corner data bits (techy feel) -->
+    <text x="12" y="18" font-family="monospace" font-size="8" fill="#00c9ff" opacity="0.4">v1.0.0</text>
+    <text x="12" y="195" font-family="monospace" font-size="8" fill="#00c9ff" opacity="0.4">MIT LICENSE</text>
+    <text x="820" y="18" font-family="monospace" font-size="8" fill="#ff4d6d" opacity="0.4">PYTHON 3.10+</text>
+    <text x="830" y="195" font-family="monospace" font-size="8" fill="#ff4d6d" opacity="0.4">DARK MODE</text>
+  </g>
+</svg>
