@@ -65,7 +65,7 @@ No unified dashboard                   →     Realtime dark-theme tracker per p
 **🏠 Hero Landing Page**
 > Animated gradient background with orb effects — entry point at `/hero`
 
-![Landing Page](screenshots/landing.png)
+![Landing Page](MMT_VSCODE/screenshots/landing.png)
 
 <br/>
 
