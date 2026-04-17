@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ✅ ANIMATED 3D PILL BANNER — self-hosted SVG -->
-<img src="./assets/banner.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
+<img src="MMT_VSCODE/assets/banner.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
 
 <br/>
 
@@ -72,22 +72,22 @@ No unified dashboard                   →     Realtime dark-theme tracker per p
 **📋 Add Medication Modal**
 > Captures patient name, email, medicine, dosage, time, and frequency
 
-![Add Medication Form](./screenshots/form.png)
+![Add Medication Form](MMT_VSCODE/screenshots/form.png)
 
 <br/>
 
 **📊 Adherence Tracker Dashboard**
 > Live card layout — tracks patient details, medications, dosage, schedule, adherence %
 
-![Tracker Dashboard](./screenshots/dashboard.png)
+![Tracker Dashboard](MMT_VSCODE/screenshots/dashboard.png)
 
 <br/>
 
 **📬 HTML Email Reminder**
 > Styled email sent at scheduled time with medicine name, dosage, and instructions
 
-![Email Reminder](./screenshots/mailmain.png)
-![Email Detail](./screenshots/mail.png)
+![Email Reminder](MMT_VSCODE/screenshots/mailmain.png)
+![Email Detail](MMT_VSCODE/screenshots/mail.png)
 
 </div>
 
@@ -299,7 +299,7 @@ School of Advanced Sciences
 
 <div align="center">
 
-<img src="./assets/footer.svg" width="100%" alt="MMT Footer"/>
+<img src="MMT_VSCODE/assets/footer.svg" width="100%" alt="MMT Footer"/>
 
 <p>
   <sub>Built to fight medication non-adherence · <strong>MMT</strong> · Automated care, one reminder at a time</sub>
