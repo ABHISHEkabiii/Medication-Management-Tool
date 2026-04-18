@@ -1,0 +1,246 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06030a"/><stop offset="40%" stop-color="#0d0510"/><stop offset="100%" stop-color="#06030a"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4500"/><stop offset="35%" stop-color="#ff6b00"/><stop offset="65%" stop-color="#ff9a00"/><stop offset="100%" stop-color="#ff6b00"/>
+    </linearGradient>
+    <linearGradient id="orangeText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb347"/><stop offset="50%" stop-color="#ff6b00"/><stop offset="100%" stop-color="#cc4400"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="48%" r="38%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.12"/><stop offset="60%" stop-color="#ff4500" stop-opacity="0.03"/><stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.06"/><stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panelRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0"/><stop offset="100%" stop-color="#ff6b00" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="pillA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b00"/><stop offset="100%" stop-color="#cc3300"/>
+    </linearGradient>
+    <linearGradient id="pillB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="pillC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="pillD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b1"/>
+      <feGaussianBlur stdDeviation="10" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="tglow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="panelshadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ff6b00" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="300" fill="url(#bg)"/>
+  <rect width="900" height="300" fill="url(#halo)"/>
+  <rect x="0" y="0" width="230" height="300" fill="url(#panelLeft)"/>
+  <rect x="670" y="0" width="230" height="300" fill="url(#panelRight)"/>
+  <line x1="228" y1="0" x2="228" y2="300" stroke="#ff6b00" stroke-width="0.6" opacity="0.35"/>
+  <line x1="672" y1="0" x2="672" y2="300" stroke="#ff6b00" stroke-width="0.6" opacity="0.35"/>
+
+  <g fill="#ff6b00" opacity="0.045">
+    <circle cx="30" cy="30" r="1"/><circle cx="60" cy="30" r="1"/><circle cx="90" cy="30" r="1"/><circle cx="120" cy="30" r="1"/><circle cx="150" cy="30" r="1"/><circle cx="180" cy="30" r="1"/><circle cx="210" cy="30" r="1"/><circle cx="240" cy="30" r="1"/><circle cx="270" cy="30" r="1"/><circle cx="300" cy="30" r="1"/><circle cx="330" cy="30" r="1"/><circle cx="360" cy="30" r="1"/><circle cx="390" cy="30" r="1"/><circle cx="420" cy="30" r="1"/><circle cx="450" cy="30" r="1"/><circle cx="480" cy="30" r="1"/><circle cx="510" cy="30" r="1"/><circle cx="540" cy="30" r="1"/><circle cx="570" cy="30" r="1"/><circle cx="600" cy="30" r="1"/><circle cx="630" cy="30" r="1"/><circle cx="660" cy="30" r="1"/><circle cx="690" cy="30" r="1"/><circle cx="720" cy="30" r="1"/><circle cx="750" cy="30" r="1"/><circle cx="780" cy="30" r="1"/><circle cx="810" cy="30" r="1"/><circle cx="840" cy="30" r="1"/><circle cx="870" cy="30" r="1"/>
+    <circle cx="30" cy="60" r="1"/><circle cx="60" cy="60" r="1"/><circle cx="90" cy="60" r="1"/><circle cx="120" cy="60" r="1"/><circle cx="150" cy="60" r="1"/><circle cx="180" cy="60" r="1"/><circle cx="210" cy="60" r="1"/><circle cx="720" cy="60" r="1"/><circle cx="750" cy="60" r="1"/><circle cx="780" cy="60" r="1"/><circle cx="810" cy="60" r="1"/><circle cx="840" cy="60" r="1"/><circle cx="870" cy="60" r="1"/>
+    <circle cx="30" cy="90" r="1"/><circle cx="60" cy="90" r="1"/><circle cx="90" cy="90" r="1"/><circle cx="120" cy="90" r="1"/><circle cx="150" cy="90" r="1"/><circle cx="180" cy="90" r="1"/><circle cx="210" cy="90" r="1"/><circle cx="720" cy="90" r="1"/><circle cx="750" cy="90" r="1"/><circle cx="780" cy="90" r="1"/><circle cx="810" cy="90" r="1"/><circle cx="840" cy="90" r="1"/><circle cx="870" cy="90" r="1"/>
+    <circle cx="30" cy="150" r="1"/><circle cx="60" cy="150" r="1"/><circle cx="90" cy="150" r="1"/><circle cx="120" cy="150" r="1"/><circle cx="150" cy="150" r="1"/><circle cx="180" cy="150" r="1"/><circle cx="210" cy="150" r="1"/><circle cx="720" cy="150" r="1"/><circle cx="750" cy="150" r="1"/><circle cx="780" cy="150" r="1"/><circle cx="810" cy="150" r="1"/><circle cx="840" cy="150" r="1"/><circle cx="870" cy="150" r="1"/>
+    <circle cx="30" cy="210" r="1"/><circle cx="60" cy="210" r="1"/><circle cx="90" cy="210" r="1"/><circle cx="120" cy="210" r="1"/><circle cx="150" cy="210" r="1"/><circle cx="180" cy="210" r="1"/><circle cx="210" cy="210" r="1"/><circle cx="720" cy="210" r="1"/><circle cx="750" cy="210" r="1"/><circle cx="780" cy="210" r="1"/><circle cx="810" cy="210" r="1"/><circle cx="840" cy="210" r="1"/><circle cx="870" cy="210" r="1"/>
+    <circle cx="30" cy="270" r="1"/><circle cx="60" cy="270" r="1"/><circle cx="90" cy="270" r="1"/><circle cx="120" cy="270" r="1"/><circle cx="150" cy="270" r="1"/><circle cx="180" cy="270" r="1"/><circle cx="210" cy="270" r="1"/><circle cx="720" cy="270" r="1"/><circle cx="750" cy="270" r="1"/><circle cx="780" cy="270" r="1"/><circle cx="810" cy="270" r="1"/><circle cx="840" cy="270" r="1"/><circle cx="870" cy="270" r="1"/>
+  </g>
+
+  <rect x="0" y="0" width="900" height="2" fill="url(#fire)" opacity="0.6"/>
+  <rect x="0" y="298" width="900" height="2" fill="url(#fire)" opacity="0.3"/>
+
+  <g stroke="#ff6b00" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M18,18 L18,42 M18,18 L42,18"/>
+    <path d="M882,18 L882,42 M882,18 L858,18"/>
+    <path d="M18,282 L18,258 M18,282 L42,282"/>
+    <path d="M882,282 L882,258 M882,282 L858,282"/>
+  </g>
+  <circle cx="18" cy="18" r="2.5" fill="#ff6b00" opacity="0.8"/>
+  <circle cx="882" cy="18" r="2.5" fill="#ff6b00" opacity="0.8"/>
+  <circle cx="18" cy="282" r="2.5" fill="#ff6b00" opacity="0.4"/>
+  <circle cx="882" cy="282" r="2.5" fill="#ff6b00" opacity="0.4"/>
+  <text x="50" y="15" font-family="'Courier New',monospace" font-size="8.5" letter-spacing="2.5" fill="#ff6b00" opacity="0.5">v1.0.0</text>
+  <text x="850" y="15" text-anchor="end" font-family="'Courier New',monospace" font-size="8.5" letter-spacing="2.5" fill="#ff6b00" opacity="0.5">PYTHON 3.12+</text>
+  <text x="50" y="294" font-family="'Courier New',monospace" font-size="8.5" letter-spacing="2.5" fill="#ff6b00" opacity="0.3">MIT LICENSE</text>
+  <text x="850" y="294" text-anchor="end" font-family="'Courier New',monospace" font-size="8.5" letter-spacing="2.5" fill="#ff6b00" opacity="0.3">HEALTHCARE · AI</text>
+
+  <g transform="translate(114,72) rotate(-32)" filter="url(#panelshadow)">
+    <rect x="-30" y="-11" width="60" height="22" rx="11" fill="url(#pillA)" opacity="0.9"/>
+    <rect x="-30" y="-11" width="30" height="22" rx="11" fill="rgba(255,255,255,0.07)"/>
+    <line x1="0" y1="-11" x2="0" y2="11" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+    <ellipse cx="-10" cy="-4" rx="10" ry="4" fill="rgba(255,255,255,0.18)" opacity="0.7"/>
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(75,130) rotate(22)" filter="url(#panelshadow)">
+    <rect x="-24" y="-9" width="48" height="18" rx="9" fill="url(#pillB)" opacity="0.85"/>
+    <rect x="-24" y="-9" width="24" height="18" rx="9" fill="rgba(255,255,255,0.06)"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke="rgba(0,0,0,0.3)" stroke-width="1.2"/>
+    <ellipse cx="-8" cy="-3" rx="8" ry="3" fill="rgba(255,255,255,0.16)" opacity="0.6"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" begin="0.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(155,148) rotate(-58)">
+    <rect x="-20" y="-8" width="40" height="16" rx="8" fill="url(#pillC)" opacity="0.8"/>
+    <rect x="-20" y="-8" width="20" height="16" rx="8" fill="rgba(255,255,255,0.07)"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+    <ellipse cx="-7" cy="-3" rx="7" ry="3" fill="rgba(255,255,255,0.2)" opacity="0.55"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(100,200) rotate(12)">
+    <rect x="-26" y="-9" width="52" height="18" rx="9" fill="url(#pillD)" opacity="0.75"/>
+    <rect x="-26" y="-9" width="26" height="18" rx="9" fill="rgba(255,255,255,0.06)"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+    <ellipse cx="-8" cy="-3" rx="8" ry="3" fill="rgba(255,255,255,0.15)" opacity="0.5"/>
+    <animate attributeName="opacity" values="0.65;0.9;0.65" dur="5s" begin="2.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(48,240) rotate(-15)">
+    <rect x="-18" y="-7" width="36" height="14" rx="7" fill="url(#pillA)" opacity="0.6"/>
+    <rect x="-18" y="-7" width="18" height="14" rx="7" fill="rgba(255,255,255,0.08)"/>
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="rgba(0,0,0,0.2)" stroke-width="0.8"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4.5s" begin="1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(175,220)" fill="#ff6b00" opacity="0.4" filter="url(#glow)">
+    <rect x="-7" y="-2.5" width="14" height="5" rx="2.5"/>
+    <rect x="-2.5" y="-7" width="5" height="14" rx="2.5"/>
+  </g>
+  <g transform="translate(55,90)" fill="#22c55e" opacity="0.3">
+    <rect x="-5" y="-1.8" width="10" height="3.5" rx="1.8"/>
+    <rect x="-1.8" y="-5" width="3.5" height="10" rx="1.8"/>
+  </g>
+  <g transform="translate(18,150)">
+    <polyline points="0,0 20,0 32,-30 42,30 52,0 72,0 82,-40 92,40 102,0 165,0"
+      fill="none" stroke="#ff6b00" stroke-width="1.8" opacity="0.5" filter="url(#glow)"
+      stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-dasharray" values="260;0" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="260;0" dur="2.2s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <g transform="translate(786,72) rotate(32)" filter="url(#panelshadow)">
+    <rect x="-30" y="-11" width="60" height="22" rx="11" fill="url(#pillB)" opacity="0.9"/>
+    <rect x="0" y="-11" width="30" height="22" rx="11" fill="rgba(255,255,255,0.06)"/>
+    <line x1="0" y1="-11" x2="0" y2="11" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+    <ellipse cx="10" cy="-4" rx="10" ry="4" fill="rgba(255,255,255,0.18)" opacity="0.7"/>
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" begin="0.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(825,130) rotate(-22)" filter="url(#panelshadow)">
+    <rect x="-24" y="-9" width="48" height="18" rx="9" fill="url(#pillA)" opacity="0.85"/>
+    <rect x="0" y="-9" width="24" height="18" rx="9" fill="rgba(255,255,255,0.07)"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke="rgba(0,0,0,0.3)" stroke-width="1.2"/>
+    <ellipse cx="8" cy="-3" rx="8" ry="3" fill="rgba(255,255,255,0.16)" opacity="0.6"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(745,148) rotate(58)">
+    <rect x="-20" y="-8" width="40" height="16" rx="8" fill="url(#pillD)" opacity="0.8"/>
+    <rect x="0" y="-8" width="20" height="16" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.6s" begin="2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(800,200) rotate(-12)">
+    <rect x="-26" y="-9" width="52" height="18" rx="9" fill="url(#pillC)" opacity="0.75"/>
+    <rect x="0" y="-9" width="26" height="18" rx="9" fill="rgba(255,255,255,0.07)"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+    <animate attributeName="opacity" values="0.65;0.9;0.65" dur="5s" begin="2.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(852,240) rotate(15)">
+    <rect x="-18" y="-7" width="36" height="14" rx="7" fill="url(#pillA)" opacity="0.6"/>
+    <rect x="0" y="-7" width="18" height="14" rx="7" fill="rgba(255,255,255,0.07)"/>
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="rgba(0,0,0,0.2)" stroke-width="0.8"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(725,220)" fill="#ff6b00" opacity="0.4" filter="url(#glow)">
+    <rect x="-7" y="-2.5" width="14" height="5" rx="2.5"/>
+    <rect x="-2.5" y="-7" width="5" height="14" rx="2.5"/>
+  </g>
+  <g transform="translate(845,90)" fill="#22c55e" opacity="0.3">
+    <rect x="-5" y="-1.8" width="10" height="3.5" rx="1.8"/>
+    <rect x="-1.8" y="-5" width="3.5" height="10" rx="1.8"/>
+  </g>
+  <g transform="translate(717,150)">
+    <polyline points="0,0 20,0 32,-30 42,30 52,0 72,0 82,-40 92,40 102,0 165,0"
+      fill="none" stroke="#ff6b00" stroke-width="1.8" opacity="0.5" filter="url(#glow)"
+      stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-dasharray" values="260;0" dur="2.2s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="260;0" dur="2.2s" begin="1.1s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <circle cx="450" cy="128" r="55" fill="none" stroke="#ff6b00" stroke-width="0.8" opacity="0">
+    <animate attributeName="r" values="50;130" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="128" r="55" fill="none" stroke="#ff9a00" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" values="50;170" dur="3.5s" begin="1.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0" dur="3.5s" begin="1.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="454" y="126" text-anchor="middle" font-family="'Arial Black','Impact',sans-serif" font-size="96" font-weight="900" letter-spacing="-2" fill="#ff6b00" opacity="0.06" filter="url(#tglow)">MMT</text>
+  <text x="450" y="126" text-anchor="middle" font-family="'Arial Black','Impact',sans-serif" font-size="96" font-weight="900" letter-spacing="-2" fill="url(#orangeText)" filter="url(#tglow)">MMT
+    <animate attributeName="opacity" values="0.92;1;0.92" dur="2.8s" repeatCount="indefinite"/>
+  </text>
+  <text x="450" y="126" text-anchor="middle" font-family="'Arial Black','Impact',sans-serif" font-size="96" font-weight="900" letter-spacing="-2" fill="none" stroke="url(#fire)" stroke-width="0.8" opacity="0.7">MMT</text>
+
+  <text x="450" y="45" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" letter-spacing="7" fill="#ff6b00" opacity="0.65" font-weight="700">HEALTHCARE · PYTHON · MONGODB</text>
+  <line x1="302" y1="136" x2="598" y2="136" stroke="url(#fire)" stroke-width="0.8" opacity="0.45"/>
+  <text x="450" y="152" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" letter-spacing="5" fill="rgba(255,255,255,0.7)" font-weight="400">MEDICATION MANAGEMENT TOOL</text>
+  <line x1="340" y1="162" x2="560" y2="162" stroke="rgba(255,107,0,0.25)" stroke-width="0.6"/>
+
+  <rect x="248" y="170" width="56" height="19" rx="9.5" fill="rgba(255,107,0,0.12)" stroke="#ff6b00" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="276" y="183" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" letter-spacing="1.8" fill="#ff8c35">FLASK</text>
+  <rect x="312" y="170" width="78" height="19" rx="9.5" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="351" y="183" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" letter-spacing="1.8" fill="#4ade80">MONGODB</text>
+  <rect x="398" y="170" width="104" height="19" rx="9.5" fill="rgba(255,107,0,0.08)" stroke="#ff6b00" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="450" y="183" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" letter-spacing="1.8" fill="#ff8c35">APSCHEDULER</text>
+  <rect x="510" y="170" width="90" height="19" rx="9.5" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="555" y="183" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" letter-spacing="1.8" fill="#93c5fd">GMAIL SMTP</text>
+  <rect x="608" y="170" width="64" height="19" rx="9.5" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="183" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" letter-spacing="1.8" fill="#c4b5fd">DARK UI</text>
+
+  <line x1="250" y1="204" x2="650" y2="204" stroke="rgba(255,107,0,0.18)" stroke-width="0.7"/>
+  <circle cx="450" cy="240" r="28" fill="none" stroke="rgba(255,107,0,0.1)" stroke-width="5"/>
+  <circle cx="450" cy="240" r="28" fill="none" stroke="url(#fire)" stroke-width="5" stroke-linecap="round" stroke-dasharray="153 176" transform="rotate(-90 450 240)" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="0 176;153 176" dur="2s" fill="freeze"/>
+  </circle>
+  <text x="450" y="236" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#ff8c35" filter="url(#glow)">87%</text>
+  <text x="450" y="249" text-anchor="middle" font-family="'Courier New',monospace" font-size="6.5" letter-spacing="2" fill="rgba(255,255,255,0.35)">ADHERENCE</text>
+
+  <line x1="340" y1="216" x2="340" y2="268" stroke="rgba(255,107,0,0.15)" stroke-width="0.7"/>
+  <text x="295" y="234" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" font-weight="700" fill="#ff6b00" filter="url(#glow)">1.1B</text>
+  <text x="295" y="248" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" letter-spacing="2.5" fill="rgba(255,255,255,0.3)">PATIENTS / YR</text>
+  <text x="295" y="261" text-anchor="middle" font-family="'Courier New',monospace" font-size="6.5" letter-spacing="1.5" fill="rgba(255,255,255,0.18)">INDIA</text>
+
+  <line x1="560" y1="216" x2="560" y2="268" stroke="rgba(255,107,0,0.15)" stroke-width="0.7"/>
+  <text x="610" y="234" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" font-weight="700" fill="#ff6b00" filter="url(#glow)">49%</text>
+  <text x="610" y="248" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" letter-spacing="2.5" fill="rgba(255,255,255,0.3)">MISS WEEKLY</text>
+  <text x="610" y="261" text-anchor="middle" font-family="'Courier New',monospace" font-size="6.5" letter-spacing="1.5" fill="rgba(255,255,255,0.18)">DOSES</text>
+
+  <text x="450" y="286" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" letter-spacing="3.5" fill="rgba(255,255,255,0.2)">Never Miss Your Medications Again</text>
+
+  <rect x="0" y="0" width="900" height="1.5" fill="url(#fire)" opacity="0">
+    <animate attributeName="y" values="-2;302" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.3;0.3;0" keyTimes="0;0.05;0.95;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
