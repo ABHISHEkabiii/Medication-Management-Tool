@@ -5,7 +5,8 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=800&color=FFA500&background=00000000&center=true&vCenter=true&multiline=false&width=800&height=45&lines=Automated+Medication+Reminders+via+Gmail+SMTP...;Full-Stack+Flask+%2B+MongoDB+Health+App;Real-Time+Adherence+Dashboard;Fighting+Non-Adherence+for+80M%2B+Patients" alt="Typing SVG"/>
+<!-- ✅ typing  -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=800&color=FF8C00&background=00000000&center=true&vCenter=true&multiline=false&width=800&height=45&lines=Automated+Medication+Reminders+via+Gmail+SMTP...;Full-Stack+Flask+%2B+MongoDB+Health+App;Real-Time+Adherence+Dashboard;Fighting+Non-Adherence+for+80M%2B+Patients" alt="Typing SVG"/>
 
 
 <br/><br/>
