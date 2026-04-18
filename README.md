@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ✅ ANIMATED 3D PILL BANNER — self-hosted SVG -->
-<img src="MMT_VSCODE/screenshots/banner_mmt.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
+<img src="MMT_VSCODE/screenshots/bannermmt.svg" width="100%" alt="MMT Medication Management Tool Banner"/>
 
 <br/>
 
