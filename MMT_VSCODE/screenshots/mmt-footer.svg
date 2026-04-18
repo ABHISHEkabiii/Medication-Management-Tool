@@ -1,0 +1,140 @@
+<svg width="900" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a0f0a"/>
+      <stop offset="50%" style="stop-color:#2d1509"/>
+      <stop offset="100%" style="stop-color:#1a0f0a"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="50%" style="stop-color:#ea580c"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="url(#footerBg)"/>
+
+  <!-- Top border animated -->
+  <rect x="0" y="0" width="900" height="1.5" fill="url(#orangeGrad)" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Grid dots -->
+  <g fill="rgba(234,88,12,0.06)">
+    <circle cx="50" cy="30" r="1.5"/><circle cx="100" cy="30" r="1.5"/><circle cx="150" cy="30" r="1.5"/>
+    <circle cx="200" cy="30" r="1.5"/><circle cx="750" cy="30" r="1.5"/><circle cx="800" cy="30" r="1.5"/>
+    <circle cx="850" cy="30" r="1.5"/><circle cx="50" cy="90" r="1.5"/><circle cx="100" cy="90" r="1.5"/>
+    <circle cx="800" cy="90" r="1.5"/><circle cx="850" cy="90" r="1.5"/>
+  </g>
+
+  <!-- Heartbeat left -->
+  <polyline points="20,60 50,60 62,35 70,85 80,60 110,60 118,42 126,78 136,60 180,60"
+    fill="none" stroke="#ea580c" stroke-width="1.2" opacity="0.4" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="200;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="200;0" dur="2s" repeatCount="indefinite"/>
+  </polyline>
+
+  <!-- Heartbeat right -->
+  <polyline points="720,60 760,60 772,35 780,85 790,60 820,60 828,42 836,78 846,60 880,60"
+    fill="none" stroke="#ea580c" stroke-width="1.2" opacity="0.4" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="200;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="200;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </polyline>
+
+  <!-- Corner brackets -->
+  <g stroke="#ea580c" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M16,16 L16,28 M16,16 L28,16"/>
+    <path d="M884,16 L884,28 M884,16 L872,16"/>
+    <path d="M16,104 L16,92 M16,104 L28,104"/>
+    <path d="M884,104 L884,92 M884,104 L872,104"/>
+  </g>
+
+  <!-- Pill icons row -->
+  <!-- Pill orange -->
+  <g filter="url(#glow)" opacity="0.7">
+    <rect x="200" y="52" width="28" height="12" rx="6" fill="none" stroke="#ea580c" stroke-width="1"/>
+    <line x1="214" y1="52" x2="214" y2="64" stroke="#ea580c" stroke-width="0.8" opacity="0.5"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+  </g>
+  <!-- Cross symbol -->
+  <g fill="#ea580c" opacity="0.4">
+    <rect x="242" y="54" width="10" height="3" rx="1"/>
+    <rect x="245" y="51" width="3" height="10" rx="1"/>
+  </g>
+  <!-- Pill green -->
+  <g opacity="0.6">
+    <rect x="262" y="53" width="24" height="11" rx="5.5" fill="none" stroke="#22c55e" stroke-width="1"/>
+    <line x1="274" y1="53" x2="274" y2="64" stroke="#22c55e" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Center content -->
+  <text x="450" y="42" text-anchor="middle" font-family="Arial Black,sans-serif"
+    font-size="16" font-weight="900" fill="none" stroke="#ea580c" stroke-width="1"
+    letter-spacing="4" filter="url(#glow)">MMT</text>
+
+  <text x="450" y="58" text-anchor="middle" font-family="Arial,sans-serif"
+    font-size="8" letter-spacing="4" fill="rgba(255,255,255,0.35)">MEDICATION MANAGEMENT TOOL</text>
+
+  <!-- Divider -->
+  <line x1="350" y1="65" x2="550" y2="65" stroke="rgba(234,88,12,0.25)" stroke-width="0.7"/>
+
+  <!-- Links row -->
+  <!-- Python badge -->
+  <rect x="330" y="72" width="48" height="16" rx="8" fill="rgba(234,88,12,0.1)" stroke="rgba(234,88,12,0.35)" stroke-width="0.7"/>
+  <text x="354" y="83.5" text-anchor="middle" font-family="Courier New,monospace" font-size="7.5" letter-spacing="1" fill="rgba(234,88,12,0.8)">PYTHON</text>
+
+  <!-- MongoDB badge -->
+  <rect x="385" y="72" width="60" height="16" rx="8" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.3)" stroke-width="0.7"/>
+  <text x="415" y="83.5" text-anchor="middle" font-family="Courier New,monospace" font-size="7.5" letter-spacing="1" fill="rgba(34,197,94,0.7)">MONGODB</text>
+
+  <!-- Flask badge -->
+  <rect x="452" y="72" width="44" height="16" rx="8" fill="rgba(234,88,12,0.1)" stroke="rgba(234,88,12,0.35)" stroke-width="0.7"/>
+  <text x="474" y="83.5" text-anchor="middle" font-family="Courier New,monospace" font-size="7.5" letter-spacing="1" fill="rgba(234,88,12,0.8)">FLASK</text>
+
+  <!-- MIT badge -->
+  <rect x="503" y="72" width="60" height="16" rx="8" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.3)" stroke-width="0.7"/>
+  <text x="533" y="83.5" text-anchor="middle" font-family="Courier New,monospace" font-size="7.5" letter-spacing="1" fill="rgba(96,165,250,0.7)">MIT LIC.</text>
+
+  <!-- Copyright -->
+  <text x="450" y="108" text-anchor="middle" font-family="Courier New,monospace"
+    font-size="8" letter-spacing="2" fill="rgba(255,255,255,0.18)">
+    Made with ♥ for Healthcare · Never Miss Your Medications Again
+  </text>
+
+  <!-- Pill right side decorations -->
+  <g filter="url(#glow)" opacity="0.55">
+    <rect x="610" y="52" width="28" height="12" rx="6" fill="none" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="624" y1="52" x2="624" y2="64" stroke="#60a5fa" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  <g fill="#ea580c" opacity="0.35">
+    <rect x="648" y="54" width="10" height="3" rx="1"/>
+    <rect x="651" y="51" width="3" height="10" rx="1"/>
+  </g>
+  <g opacity="0.5">
+    <rect x="668" y="53" width="24" height="11" rx="5.5" fill="none" stroke="#f87171" stroke-width="1"/>
+    <line x1="680" y1="53" x2="680" y2="64" stroke="#f87171" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Pulse dot left -->
+  <circle cx="195" cy="60" r="4" fill="none" stroke="#ea580c" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="3;12" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="195" cy="60" r="3" fill="#ea580c" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulse dot right -->
+  <circle cx="705" cy="60" r="4" fill="none" stroke="#22c55e" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="3;12" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="705" cy="60" r="3" fill="#22c55e" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
