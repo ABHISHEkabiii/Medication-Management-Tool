@@ -299,7 +299,7 @@ School of Advanced Sciences
 
 <div align="center">
 
-<img src="MMT_VSCODE/screenshots/footer_mmt.svg" width="100%" alt="MMT Footer"/>
+<img src="MMT_VSCODE/screenshots/mmt-footer.svg" width="100%" alt="MMT Footer"/>
 
 <p>
   <sub>Built to fight medication non-adherence · <strong>MMT</strong> · Automated care, one reminder at a time</sub>
